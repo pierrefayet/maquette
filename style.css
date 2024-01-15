@@ -321,14 +321,81 @@ footer p {
 }
 
 /* modifier.html */
-.content-media-tricks-modifier {
+.content-description-scroll {
+  overflow-y: scroll;
+  margin: 2%;
+  border: 2px solid aliceblue;
+  padding: 1%;
+}
+
+.information-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.content-media-tricks-modifier img, .content-media-tricks-modifier video {
+.information-content .information-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+}
+.information-content .information-actions #select-group {
+  width: 100px;
+  height: 25px;
+  font-weight: bold;
+}
+.information-content .information-actions .button-content {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+.information-content .information-actions .button-content .delete button {
+  width: 70px;
+  height: 30px;
+  background-color: #e01e1e;
+  font-weight: bold;
+}
+.information-content .information-actions .button-content .save button {
+  width: 70px;
+  height: 30px;
+  font-weight: bold;
+}
+
+.content-media {
+  display: flex;
+}
+.content-media .media-tricks--modifier {
+  width: 20%;
   margin: 1%;
-  width: 18%;
-  height: 18%;
+}
+.content-media .media-tricks--modifier .media-tricks-modifier-content {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+.content-media .media-tricks--modifier .media-tricks-modifier-content img {
+  width: 100%;
+}
+.content-media .media-tricks--modifier .media-tricks-modifier-content .media-item {
+  width: 100%;
+}
+.content-media .media-tricks--modifier .modifier-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.content-media .media-tricks--modifier .modifier-icons .modifier-icons-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: aliceblue;
+  width: 60px;
+  height: 30px;
+}
+.content-media .media-tricks--modifier .modifier-icons .modifier-icons-content div {
+  margin-right: 10px;
 }
 
 /* registrationPassword.html */
@@ -504,6 +571,7 @@ footer p {
     border: 2px solid #2c2727;
     width: 120px;
     height: 30px;
+    font-weight: bold;
   }
   .content #content-trick .content-media-tricks {
     display: none;
@@ -511,7 +579,7 @@ footer p {
   /* registration */
   .connection {
     border: 2px solid cornflowerblue;
-    margin-bottom: 20px;
+    margin: 50px 0 120px 0;
   }
   .connection-reset {
     border: 2px solid cornflowerblue;
@@ -541,6 +609,9 @@ footer p {
     display: none;
   }
   .link-registration {
+    display: none;
+  }
+  .content-media {
     display: none;
   }
 }
@@ -642,6 +713,9 @@ footer p {
   .connection-form .link-registration {
     display: block;
     margin: 15px 0 5px 0;
+  }
+  .content-media {
+    display: none;
   }
 }
 

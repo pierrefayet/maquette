@@ -368,16 +368,90 @@ footer {
 
 /* modifier.html */
 
-.content-media-tricks-modifier {
+.content-description-scroll {
+  overflow-y: scroll;
+  margin: 2%;
+  border: 2px solid aliceblue;
+  padding: 1%;
+}
+
+.information-content {
   display: flex;
   flex-direction: column;
-
-  img, video {
-    margin: 1%;
-    width: 18%;
-    height: 18%;
+  align-items: center;
+  .information-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    #select-group {
+      width: 100px;
+      height: 25px;
+      font-weight: bold
+    }
+    .button-content {
+      display: flex;
+      width: 200px;
+      justify-content: space-around;
+      align-items: center;
+      height: 300px;
+      .delete button {
+        width: 70px;
+        height: 30px;
+        background-color: #e01e1e;
+        font-weight: bold;
+      }
+      .save button {
+        width: 70px;
+        height: 30px;
+        font-weight: bold
+      }
+    }
   }
 }
+
+.content-media {
+  display: flex;
+
+  .media-tricks--modifier {
+    width: 20%;
+    margin: 1%;
+
+    .media-tricks-modifier-content {
+      display: flex;
+      flex-direction: column;
+      margin: 1%;
+
+      img {
+        width: 100%;
+      }
+
+      .media-item {
+        width: 100%;
+      }
+    }
+
+    .modifier-icons {
+      display: flex;
+      justify-content: flex-end;
+
+      .modifier-icons-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        background-color: aliceblue;
+        width: 60px;
+        height: 30px;
+
+        div {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
 
 /* registrationPassword.html */
 
@@ -462,6 +536,7 @@ footer {
       height: 30px;
     }
   }
+
   .link-login {
     display: none;
   }
@@ -470,7 +545,7 @@ footer {
     display: none;
   }
 
-  .button-reset button{
+  .button-reset button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -481,8 +556,9 @@ footer {
   .link-registration {
     display: none;
   }
+
   .link-reset {
-    margin:  20px 0 20px 0;
+    margin: 20px 0 20px 0;
   }
 }
 
@@ -597,6 +673,7 @@ footer {
       border: 2px solid #2c2727;
       width: 120px;
       height: 30px;
+      font-weight: bold;
     }
   }
   .content #content-trick .content-media-tricks {
@@ -607,7 +684,7 @@ footer {
 
   .connection {
     border: 2px solid cornflowerblue;
-    margin-bottom: 20px;
+    margin: 50px 0 120px 0;
   }
 
   .connection-reset {
@@ -646,6 +723,11 @@ footer {
   .link-registration {
     display: none;
   }
+
+  .content-media {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -766,10 +848,14 @@ footer {
 
   .connection-form .link-registration {
     display: block;
-    margin:  0 0 20px 0;
+    margin: 0 0 20px 0;
   }
   .connection-form .link-registration {
     display: block;
-    margin:  15px 0 5px 0;
+    margin: 15px 0 5px 0;
+  }
+
+  .content-media {
+    display: none;
   }
 }
